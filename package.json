@@ -1,0 +1,33 @@
+{
+  "name": "techtalk-integration-tests-postman",
+  "version": "1.0.0",
+  "description": "Small test api to demonstrate integration tests with postman",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon",
+    "test": "newman -c integration-tests.json",
+    "testWithData": "newman -c integration-tests-with-data.json -d test-data.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smartive/techtalk-integration-tests-postman.git"
+  },
+  "keywords": [
+    "express",
+    "api",
+    "postman",
+    "integrationtest"
+  ],
+  "author": "Christoph Bühler <christoph@smartive.ch>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/smartive/techtalk-integration-tests-postman/issues"
+  },
+  "homepage": "https://github.com/smartive/techtalk-integration-tests-postman#readme",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "express": "^4.13.3",
+    "newman": "^2.0.3",
+    "nodemon": "^1.9.1"
+  }
+}
